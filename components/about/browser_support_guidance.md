@@ -1,6 +1,6 @@
 ---
-description: What the Design System is and how it works.
-title: Designing for different browsers and devices
+description: Designing for different browsers and devices
+title: Browser support guidance
 author: dlevine
 ---
 
