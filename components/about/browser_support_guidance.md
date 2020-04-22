@@ -1,5 +1,5 @@
 ---
-description: Browser Support Guidance
+description: Browser support guidance
 title: Designing for Different Browsers and Devices
 author: dlevine
 ---
@@ -29,7 +29,7 @@ These lists represent usage statistics from gov.bc.ca for non-government users. 
 | Android          | 15.4       | +0.5              |
 | Mac OS X         | 12.5       | +10.4             |
 
-<sub>Usage statistics for one-year April 2, 2019 to April 2, 2020</sub>
+Usage statistics for one-year April 2, 2019 to April 2, 2020
 
 ## Building services that government workers use
 
