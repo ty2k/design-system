@@ -1,6 +1,6 @@
 ---
-description: Designing for different browsers and devices
-title: Browser Support Guidance
+description: Browser Support Guidance
+title: Designing for Different Browsers and Devices
 author: dlevine
 ---
 
