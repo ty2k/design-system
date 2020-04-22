@@ -1,10 +1,10 @@
 ---
 description: Designing for different browsers and devices
-title: Browser support guidance
+title: Browser Support Guidance
 author: dlevine
 ---
 
-# Designing for different browsers and devices
+# Designing for Different Browsers and Devices
 
 Not all browsers will render web pages in the same way. There are often visible differences in the ways that different browsers handle technologies like CSS, HTML and JavaScript.
 
@@ -29,7 +29,7 @@ These lists represent usage statistics from gov.bc.ca for non-government users. 
 | Android          | 15.4       | +0.5              |
 | Mac OS X         | 12.5       | +10.4             |
 
-Usage statistics for one-year April 2, 2019 to April 2, 2020
+<sub>Usage statistics for one-year April 2, 2019 to April 2, 2020</sub>
 
 ## Building services that government workers use
 
