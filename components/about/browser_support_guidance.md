@@ -1,10 +1,10 @@
 ---
 description: Designing for different browsers and devices
-title: Browser support guidance
+title: Browser Support Guidance
 author: dlevine
 ---
 
-# Designing for different browsers and devices
+# Designing for Different Browsers and Devices
 
 Not all browsers will render web pages in the same way. There are often visible differences in the ways that different browsers handle technologies like CSS, HTML and JavaScript.
 
