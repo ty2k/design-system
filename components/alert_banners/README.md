@@ -4,19 +4,13 @@ title: Alert Banners
 author: dlevine
 ---
 
-![Status](https://img.shields.io/badge/Recommended-Draft-orange.svg)
-> Last Updated: April 23, 2020
+> Last Updated: April 24, 2020
 
 # Alert Banners
 Alert banners notify users of important information or changes on a page. Typically, they appear at the top of a page.
 
 ## Example
 <component-preview path="components/alert_banners/sample.html" height="688px" width="800px"> </component-preview>
-
-* [Error The email address cannot be empty]
-* [Warning The eligibility requirements for this service have changed. Review the changes before continuing.]
-* [Information The deadline for submission has been extended to March 1, 2020]
-* [Success Your application has been successfully submitted.]]
 
 ## Use This For
 Telling users important and typically time sensitive information. This includes:
@@ -40,16 +34,16 @@ Telling users important and typically time sensitive information. This includes:
 * Avoid using more than one alert per page.
 * Do not include alerts that are not related to the users current goal.
 
-## Error Alert
+### Error Alert
 Use error alerts with form validation errors or other errors, which will block the user from completing their task.
 
-## Warning Alert
+### Warning Alert
 Use warning alerts to tell the user something urgent or to help the user avoid a problem.
 
-## Information Alert
+### Information Alert
 Use information alerts for important time-sensitive information.
 
-## Success Alert
+### Success Alert
 Use success alerts to notify the user that a task is fully completed
 
 ## Rationale
@@ -61,20 +55,20 @@ In addition to [fundamental accessibility](https://developer.gov.bc.ca/Design-Sy
 ### Screenreaders
 As read using ChromeVox
 
-> *"Success. Everything has been submitted. You should expect a response within three business days."*
+> *"Error. The email address cannot be empty."*
 
-> *"Error. There are errors in your submission. Please go back and fix them."*
+> *"Warning. The eligibility requirements for this service have changed. Review the changes before continuing."*
 
-> *"Information. This webpage has been updated to include the latest poluch changes that took effect on September 28, 2018"*
+> *"Information. The deadline for submission has been extended to March 1, 2020."*
 
-> *"Warning. Effective December 31, 2019 this website will be shutting down permanently."*
+> *"Success. Your application has been successfully submitted."*
 
 
 ### Colour Contrast
-* [Contrast ratio](https://webaim.org/resources/contrastchecker/) exceeds 7:1 for text and links on all alert background colours.
+* [Contrast ratio](https://webaim.org/resources/contrastchecker/) exceeds 5:1 for text and links on all alert background colours.
 
 ### ARIA Labels
-* `role="alertdialog"` labels have been included to ensure screenreaders are conveying the contents of the alert banners effectively.
+* `role="alert"` labels have been included to ensure screenreaders are conveying the contents of the alert banners effectively.
 
 ## Code
 ### HTML
