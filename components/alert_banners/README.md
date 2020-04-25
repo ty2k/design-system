@@ -10,7 +10,7 @@ author: dlevine
 Alert banners notify users of important information or changes on a page. Typically, they appear at the top of a page.
 
 ## Example
-<component-preview path="components/alert_banners/sample.html" height="688px" width="500px"> </component-preview>
+<component-preview path="components/alert_banners/sample.html" height="500px" width="800px"> </component-preview>
 
 ## Use This For
 Telling users important and typically time sensitive information. This includes:
