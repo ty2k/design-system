@@ -72,25 +72,25 @@ As read using ChromeVox
 ## Code
 ### HTML
 ```html
-<div class="bc-gov-alertbanner bc-gov-alertbanner-error" role="alertdialog" aria-labelledby="error" aria-describedby="error-desc">
+<div class="bc-gov-alertbanner bc-gov-alertbanner-error" role="alert" aria-labelledby="error" aria-describedby="error-desc">
   <i class="fas fa-exclamation-circle"></i>
   <h3 id="error">Error</h3>
   <p id="error-desc">The email address cannot be empty.</p>
 </div>
 
-<div class="bc-gov-alertbanner bc-gov-alertbanner-warning" role="alertdialog" aria-labelledby="warning" aria-describedby="warning-desc">
+<div class="bc-gov-alertbanner bc-gov-alertbanner-warning" role="alert" aria-labelledby="warning" aria-describedby="warning-desc">
   <i class="fas fa-exclamation-triangle"></i>
   <h3 id="warning">Warning</h3>
   <p id="warning-desc">The <a>eligibility requirements</a> for this service have changed. Review the changes before continuing.</p>
 </div>
 
-<div class="bc-gov-alertbanner bc-gov-alertbanner-important" role="alertdialog" aria-labelledby="important" aria-describedby="important-desc">
+<div class="bc-gov-alertbanner bc-gov-alertbanner-important" role="alert" aria-labelledby="important" aria-describedby="important-desc">
   <i class="fas fa-info-circle"></i>
   <h3 id="important">Information</h3>
   <p id="important-desc">The deadline for submission has been extended to March 1, 2020.</p>
 </div>
 
-<div class="bc-gov-alertbanner bc-gov-alertbanner-success" role="alertdialog" aria-labelledby="success" aria-describedby="success-desc">
+<div class="bc-gov-alertbanner bc-gov-alertbanner-success" role="alert" aria-labelledby="success" aria-describedby="success-desc">
   <i class="fas fa-check-circle"></i>
   <h3 id="success">Success</h3>
   <p id="success-desc">Your application has been successfully submitted.</p>
