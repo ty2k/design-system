@@ -152,7 +152,7 @@ p {
   padding: 15px;
 }
 
-.bc-gov-alertbanner p, h3{
+.bc-gov-alertbanner p, h3 {
   padding-left: 30px;
 }
 
