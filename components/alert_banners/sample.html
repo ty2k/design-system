@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <title>Alert Banner</title>
+    <title>Alert Banners</title>
     <style>
       body {
         font-family: 'BC Sans', 'Noto Sans', Arial, 'sans serif';
@@ -60,8 +60,22 @@
         padding: 15px;
       }
 
-      .bc-gov-alertbanner p, h3 {
-        padding-left: 30px;
+      .bc-gov-alertbanner:before {
+        float: left;
+        font-family: 'Font Awesome 5 Free';
+        font-size: larger;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 1;
+        margin-right: 10px;
+        position: relative;
+        top: 1px;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .bc-gov-alertbanner p, h1, h2, h3, h4, h5 {
+        padding-left: 35px;
       }
 
       .bc-gov-alertbanner-error {
@@ -70,8 +84,8 @@
         color: #a12622;
       }
 
-      .bc-gov-alertbanner-important {
-        background-color: #d9eaf7;
+      .bc-gov-alertbanner-error:before {
+        content: "\f06a";
       }
 
       .bc-gov-alertbanner-warning {
@@ -80,39 +94,47 @@
         color: #6c4a00;
       }
 
+      .bc-gov-alertbanner-warning:before {
+        content: "\f071";
+      }
+
+      .bc-gov-alertbanner-info {
+        background-color: #d9eaf7;
+      }
+
+      .bc-gov-alertbanner-info:before {
+        content: "\f05a";
+      }
+
       .bc-gov-alertbanner-success {
         background-color: #dff0d8;
         border-color: #d6e9c6;
         color: #2d4821;
       }
 
-      .fas {
-        float: left;
+      .bc-gov-alertbanner-success:before {
+        content: "\f058";
       }
     </style>
   </head>
 <body>
 
   <div class="bc-gov-alertbanner bc-gov-alertbanner-error" role="alert" aria-labelledby="error" aria-describedby="error-desc">
-    <i class="fas fa-exclamation-circle"></i>
     <h3 id="error">Error</h3>
     <p id="error-desc">The email address cannot be empty.</p>
   </div>
 
   <div class="bc-gov-alertbanner bc-gov-alertbanner-warning" role="alert" aria-labelledby="warning" aria-describedby="warning-desc">
-    <i class="fas fa-exclamation-triangle"></i>
     <h3 id="warning">Warning</h3>
     <p id="warning-desc">The <a>eligibility requirements</a> for this service have changed. Review the changes before continuing.</p>
   </div>
 
-  <div class="bc-gov-alertbanner bc-gov-alertbanner-important" role="alert" aria-labelledby="important" aria-describedby="important-desc">
-    <i class="fas fa-info-circle"></i>
-    <h3 id="important">Information</h3>
-    <p id="important-desc">The deadline for submission has been extended to March 1, 2020.</p>
+  <div class="bc-gov-alertbanner bc-gov-alertbanner-info" role="alert" aria-labelledby="info" aria-describedby="info-desc">
+    <h3 id="info">Information</h3>
+    <p id="info-desc">The deadline for submission has been extended to March 1, 2020.</p>
   </div>
 
   <div class="bc-gov-alertbanner bc-gov-alertbanner-success" role="alert" aria-labelledby="success" aria-describedby="success-desc">
-    <i class="fas fa-check-circle"></i>
     <h3 id="success">Success</h3>
     <p id="success-desc">Your application has been successfully submitted.</p>
   </div>

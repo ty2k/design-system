@@ -15,24 +15,24 @@ Alert banners notify users of important information or changes on a page. Typica
 ## Use This For
 Telling users important and typically time sensitive information. This includes:
 
-* Success messages
-* Error messages
-* Warnings
-* Important pieces of information
-* System statuses
+- Success messages
+- Error messages
+- Warnings
+- Important pieces of information
+- System statuses
 
 ## Don't Use This For
-* In-line error validation on form inputs
-* Popular content on your website
-* Highlighting content, quotes, examples, snippets of information. Use a [callout component](https://developer.gov.bc.ca/Design-System/Callout) instead
+- In-line error validation on form inputs
+- Popular content on your website
+- Highlighting content, quotes, examples, snippets of information. Use a [callout component](https://developer.gov.bc.ca/Design-System/Callout) instead
 
 ## Design Guidance
-* If a user is required to do something in response to an alert, let them know what they need to do and make that task as easy as possible. For example, provide them a link to something in the alert.
-* Write messages in a concise manner while avoiding the use of jargon and technical language.
-* Do not write lots of text. Too much text will cause users to ignore the content.
-* Allow users the ability to dismiss alerts when appropriate.
-* Avoid using more than one alert per page.
-* Do not include alerts that are not related to the users current goal.
+- If a user is required to do something in response to an alert, let them know what they need to do and make that task as easy as possible. For example, provide them a link to something in the alert.
+- Write messages in a concise manner while avoiding the use of jargon and technical language.
+- Do not write lots of text. Too much text will cause users to ignore the content.
+- Allow users the ability to dismiss alerts when appropriate.
+- Avoid using more than one alert per page.
+- Do not include alerts that are not related to the users current goal.
 
 ### Error Alert
 Use error alerts with form validation errors or other errors, which will block the user from completing their task.
@@ -64,34 +64,30 @@ As read using ChromeVox
 > *"Success. Your application has been successfully submitted."*
 
 ### Colour Contrast
-* [Contrast ratio](https://webaim.org/resources/contrastchecker/) exceeds 5:1 for text and links on all alert background colours.
+- [Contrast ratio](https://webaim.org/resources/contrastchecker/) exceeds 5:1 for text and links on all alert background colours.
 
 ### ARIA Labels
-* `role="alert"` labels have been included to ensure screenreaders are conveying the contents of the alert banners effectively.
+- `role="alert"` labels have been included to ensure screenreaders are conveying the contents of the alert banners effectively.
 
 ## Code
 ### HTML
 ```html
 <div class="bc-gov-alertbanner bc-gov-alertbanner-error" role="alert" aria-labelledby="error" aria-describedby="error-desc">
-  <i class="fas fa-exclamation-circle"></i>
   <h3 id="error">Error</h3>
   <p id="error-desc">The email address cannot be empty.</p>
 </div>
 
 <div class="bc-gov-alertbanner bc-gov-alertbanner-warning" role="alert" aria-labelledby="warning" aria-describedby="warning-desc">
-  <i class="fas fa-exclamation-triangle"></i>
   <h3 id="warning">Warning</h3>
   <p id="warning-desc">The <a>eligibility requirements</a> for this service have changed. Review the changes before continuing.</p>
 </div>
 
-<div class="bc-gov-alertbanner bc-gov-alertbanner-important" role="alert" aria-labelledby="important" aria-describedby="important-desc">
-  <i class="fas fa-info-circle"></i>
-  <h3 id="important">Information</h3>
-  <p id="important-desc">The deadline for submission has been extended to March 1, 2020.</p>
+<div class="bc-gov-alertbanner bc-gov-alertbanner-info" role="alert" aria-labelledby="info" aria-describedby="info-desc">
+  <h3 id="info">Information</h3>
+  <p id="info-desc">The deadline for submission has been extended to March 1, 2020.</p>
 </div>
 
 <div class="bc-gov-alertbanner bc-gov-alertbanner-success" role="alert" aria-labelledby="success" aria-describedby="success-desc">
-  <i class="fas fa-check-circle"></i>
   <h3 id="success">Success</h3>
   <p id="success-desc">Your application has been successfully submitted.</p>
 </div>
@@ -152,8 +148,22 @@ p {
   padding: 15px;
 }
 
-.bc-gov-alertbanner p, h3 {
-  padding-left: 30px;
+.bc-gov-alertbanner:before {
+  float: left;
+  font-family: 'Font Awesome 5 Free';
+  font-size: larger;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  margin-right: 10px;
+  position: relative;
+  top: 1px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bc-gov-alertbanner p, h1, h2, h3, h4, h5 {
+  padding-left: 35px;
 }
 
 .bc-gov-alertbanner-error {
@@ -162,8 +172,8 @@ p {
   color: #a12622;
 }
 
-.bc-gov-alertbanner-important {
-  background-color: #d9eaf7;
+.bc-gov-alertbanner-error:before {
+  content: "\f06a";
 }
 
 .bc-gov-alertbanner-warning {
@@ -172,13 +182,25 @@ p {
   color: #6c4a00;
 }
 
+.bc-gov-alertbanner-warning:before {
+  content: "\f071";
+}
+
+.bc-gov-alertbanner-info {
+  background-color: #d9eaf7;
+}
+
+.bc-gov-alertbanner-info:before {
+  content: "\f05a";
+}
+
 .bc-gov-alertbanner-success {
   background-color: #dff0d8;
   border-color: #d6e9c6;
   color: #2d4821;
 }
 
-.fas {
-  float: left;
+.bc-gov-alertbanner-success:before {
+  content: "\f058";
 }
 ```
