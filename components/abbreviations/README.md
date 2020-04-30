@@ -7,7 +7,7 @@ author: orinevares
 
 ![Status](https://img.shields.io/badge/Recommended-Draft-orange.svg)
 
-> Last Updated: June 5, 2019
+> Last Updated: April 30, 2020
 
 # Abbreviations and Acronyms
 An abbreviation or acronym is a shortened form of a word, phrase, or name. They are often used to reduce redundancy within a body of text.

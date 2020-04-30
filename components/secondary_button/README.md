@@ -6,7 +6,7 @@ author: orinevares
 ---
 
 ![Status](https://img.shields.io/badge/Recommended-Draft-orange.svg)
-> Last Updated: March 27, 2019
+> Last Updated: April 30, 2020
 
 # Secondary Button
 Secondary buttons allow users to carry out a supporting action on your service, such as Back or Cancel.

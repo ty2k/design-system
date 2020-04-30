@@ -6,7 +6,7 @@ author: orinevares
 ---
 
 ![Status](https://img.shields.io/badge/Recommended-Draft-orange.svg)
-> Last Updated: April 3, 2019
+> Last Updated: April 30, 2020
 
 # Dropdown
 Dropdowns allow users to select one option from a list.
