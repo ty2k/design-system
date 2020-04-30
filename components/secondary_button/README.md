@@ -116,7 +116,7 @@ As read using ChromeVox
 .BC-Gov-SecondaryButton-Dark:hover {
     text-decoration: underline;
     background-color: #fff;
-    color: #494949;
+    color: #313132;
     }
 
 :focus {
@@ -126,7 +126,7 @@ As read using ChromeVox
 
 .BC-Gov-SecondaryButton-Dark:active {
     background-color: #f2f2f2;
-    color: #494949;
+    color: #313132;
     }
 
 .background-colour {

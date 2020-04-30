@@ -48,7 +48,7 @@ p {
   font-family: ‘BCSans’, ‘Noto Sans’, Verdana, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  color: #494949;
+  color: #313132;
 }
 
 ```
