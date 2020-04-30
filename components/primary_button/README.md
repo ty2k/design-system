@@ -101,7 +101,7 @@ As read using ChromeVox
     background-color: #fff;
     border: none;
     border-radius: 4px;
-    color: #494949;
+    color: #313132;
     padding: 12px 32px;
     text-align: center;
     text-decoration: none;
