@@ -91,7 +91,6 @@ As read using ChromeVox
   -->
     &nbsp;
   </div>
-  </div>
 </header>
 ```
 
