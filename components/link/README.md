@@ -61,7 +61,7 @@ As read using ChromeVox
 ## Telephone Links
 Telephone links clicked on mobile phone browsers will make the call through the phone itself. Telephone links clicked on desktop browsers will make the call through a phone application (e.g. Skype) if available. When designing for a device that explicitly cannot make calls, telephone links should be omitted.
 
-To create a telephone link, in the `<a>` tag's `href` attribute, use the `tel:` protocol followed by the full phone number in international dialing format (`+1-250-555-0123`). For the link text, use the ten digit phone number with hyphens. See **Code** section for an example.
+To create a telephone link, in the `<a>` tag's `href` attribute, use the `tel:` protocol followed by the full phone number in international dialing format (`+1-250-555-0123`). For the link text, use the ten digit phone number with hyphens. See <a href="#code">Code section</a> for an example.
 
 Using the country code `+1` in your `href` field ensures that the phone link works when clicked worldwide. Hyphens are not required for functionality, but they improve readability when the link is displayed in the status bar on hover.
 
