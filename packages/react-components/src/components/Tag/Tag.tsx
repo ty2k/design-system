@@ -8,7 +8,13 @@ import {
 import "./Tag.css";
 
 export interface TagProps extends ReactAriaTagProps {
+  /**
+   * Icon that appears to the left of the `textValue` field
+   */
   icon?: React.ReactNode;
+  /**
+   * Background color
+   */
   color?:
     | "bc-blue"
     | "bc-gold"
@@ -21,21 +27,15 @@ export interface TagProps extends ReactAriaTagProps {
     | "yellow";
 }
 
-export default function Tag({
-  className,
-  color = "blue",
-  icon,
-  id,
-  textValue,
-}: TagProps) {
+export default function Tag({ color = "blue", icon, id, textValue }: TagProps) {
   return (
     <ReactAriaTag
-      className={className ? className : `react-aria-Tag ${color}`}
+      className={`bcds-react-aria-Tag ${color}`}
       id={id}
       textValue={textValue}
     >
       {({ allowsRemoving, isDisabled }: TagRenderProps) => (
-        <div className="react-aria-Tag__contents">
+        <div className="bcds-react-aria-Tag--contents">
           {icon}
           {textValue}
           {!isDisabled && allowsRemoving && (

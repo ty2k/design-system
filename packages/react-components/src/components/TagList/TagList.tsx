@@ -10,6 +10,9 @@ import "./TagList.css";
 export interface TagListProps<T>
   extends Pick<ReactAriaTagListProps<T>, "children" | "renderEmptyState"> {
   items: TagProps[];
+  /**
+   * Used to set the `flex-direction` on the TagList.
+   */
   orientation?: "horizontal" | "vertical";
 }
 
@@ -21,14 +24,12 @@ export default function TagList<T extends object>({
 }: TagListProps<T>) {
   return (
     <ReactAriaTagList
-      className={`react-aria-TagList ${orientation}`}
+      className={`bcds-react-aria-TagList ${orientation}`}
       {...props}
       renderEmptyState={renderEmptyState}
+      items={items}
     >
-      {items &&
-        Array.from(items).map((item: TagProps) => {
-          return <Tag {...item} key={item.id} />;
-        })}
+      {(item) => <Tag {...item} key={item.id} />}
     </ReactAriaTagList>
   );
 }
