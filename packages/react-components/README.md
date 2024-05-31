@@ -8,7 +8,7 @@ Questions? Please email the <a href="mailto:DesignSystem@gov.bc.ca">GDX OSS Desi
 
 See repository: https://github.com/bcgov/design-system
 
-To use, install this package and import the components into your application.
+To use, install this package and import the components into your application. Test.
 
 ## Install
 
