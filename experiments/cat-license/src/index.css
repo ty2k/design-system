@@ -1,0 +1,30 @@
+@import "@bcgov/bc-sans/css/BCSans.css";
+@import "@bcgov/design-tokens/css/variables.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: var(--typography-regular-body);
+  color: var(--typography-color-primary);
+  background-color: var(--surface-color-background-light-gray);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+p {
+  margin: 0;
+}
